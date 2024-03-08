@@ -1,5 +1,7 @@
+@use 'sass:math';
+
 @function dark-background($number: 1) {
-  @return rgba(0, 0, 0, ($number / 10));
+  @return rgba(0, 0, 0, math.div($number, 10));
 }
 
 .wrapper {
