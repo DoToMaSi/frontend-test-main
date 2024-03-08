@@ -23,4 +23,9 @@
     Critérios de Avaliação:
     <br><br>
   </div>
+
+  <p *ngIf="livroTeste">{{ livroTeste.getInfo() }}</p>
+  <p *ngIf="periodicoTeste">{{ periodicoTeste.getInfo() }}</p>
+  <p *ngIf="publicacaoTeste">{{ publicacaoTeste.getInfo() }}</p>
+
 </div>
