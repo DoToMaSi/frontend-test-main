@@ -34,9 +34,7 @@ export class CrudComponent implements OnInit {
 
   filtrar(arg: string) {
     const searchVal = arg.trim();
-    if (searchVal.length > 0) {
-      this.dataSource.filter = searchVal;
-    }
+    this.dataSource.filter = searchVal;
   }
 
   adicionar() {
