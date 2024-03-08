@@ -1,5 +1,5 @@
 @function dark-background($number: 1) {
-  @return gray;
+  @return rgba(0, 0, 0, ($number / 10));
 }
 
 .wrapper {
@@ -16,12 +16,15 @@
 .item1 {
   background-color: dark-background(1);
 }
+
 .item2 {
   background-color: dark-background(2);
 }
+
 .item3 {
   background-color: dark-background(3);
 }
+
 .item4 {
   background-color: dark-background(4);
 }
